@@ -71,5 +71,5 @@ def start_calendar():
             print("TRASH!")
 
 
-# Just a snekky lil comment
+# Just deleting a snekky lil comment
 start_calendar()
