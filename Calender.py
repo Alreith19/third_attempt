@@ -13,16 +13,15 @@ from time import sleep, strftime
 USER_NAME = input("What's your name?")
 calendar = {}
 
-
 def welcome():
-    print("Hey " + USER_NAME + ", welcome to your calendar! It's like a visual representation of the rest of your life..")
+    print(
+        "Hey " + USER_NAME + ", welcome to your calendar! It's like a visual representation of the rest of your life..")
     sleep(1)
     print("Calendar booting...")
     print("Today is " + strftime("%A, %B %d %Y"))
     print("The time is " + strftime("%H:%M:%S"))
     sleep(1)
     print("What would you like to do?")
-
 
 def start_calendar():
     welcome()
@@ -32,7 +31,7 @@ def start_calendar():
         user_choice = user_choice.upper()
         if user_choice == "V":
             if len(calendar.keys()) < 1:
-                print ("Calendar is empty.")
+                print("Calendar is empty.")
             else:
                 print(calendar)
         elif user_choice == "U":
@@ -69,7 +68,8 @@ def start_calendar():
             print("Exiting Program")
             start = False
         else:
-            print ("TRASH!")
+            print("TRASH!")
+
 
 # Just a snekky lil comment
 start_calendar()
